@@ -35,7 +35,7 @@ function win(userChoice, computerChoice)
     computerScore_span.innerHTML = computerScore;
     const smallUserWord = "user".fontsize(3);
     const smallCompWord = "comp".fontsize(3);
-    result_p.innerHTML = convertToWord(userChoice) + smallUserWord + " Beats " +  convertToWord(computerChoice) + smallCompWord+ " You Win";
+    result_p.innerHTML = convertToWord(userChoice) + " Beats " +  convertToWord(computerChoice) + "<br/> You Win";
     document.getElementById(userChoice).classList.add('back-green'); 
     setTimeout(function(){
         document.getElementById(userChoice).classList.remove("back-green")
@@ -51,7 +51,7 @@ function lose(userChoice, computerChoice)
     computerScore_span.innerHTML = computerScore;
     const smallUserWord = "user".fontsize(3);
     const smallCompWord = "comp".fontsize(3);
-    result_p.innerHTML = convertToWord(userChoice) + smallUserWord + " Looses " +  convertToWord(computerChoice) + smallCompWord+ " You Lost";
+    result_p.innerHTML = convertToWord(userChoice) + " Looses " +  convertToWord(computerChoice) + "<br/> You Lost";
     document.getElementById(userChoice).classList.add('back-red'); 
     setTimeout(function(){
         document.getElementById(userChoice).classList.remove("back-red")
@@ -67,7 +67,7 @@ function draw(userChoice, computerChoice)
     // computerScore_span.innerHTML = computerScore;
     const smallUserWord = "user".fontsize(3);
     const smallCompWord = "comp".fontsize(3);
-    result_p.innerHTML = convertToWord(userChoice) + smallUserWord + " Equals " +  convertToWord(computerChoice) + smallCompWord+ " It's a Draw";
+    result_p.innerHTML = convertToWord(userChoice)  + " Equals " +  convertToWord(computerChoice) + "<br/> It's a Draw";
     document.getElementById(userChoice).classList.add('back-orange'); 
     setTimeout(function(){
         document.getElementById(userChoice).classList.remove("back-orange")
